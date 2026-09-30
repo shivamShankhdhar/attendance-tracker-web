@@ -11,7 +11,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Bizora — Workforce Attendance OS",
   description: "Smart Attendance. Seamless Management. Accept your workplace invitation and join your team on Bizora.",
-  metadataBase: new URL("https://bizora.app"),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL || "https://www.bizora.shivamshankhdhar.online"
+  ),
   icons: { icon: "/favicon.png", apple: "/favicon.png" },
   openGraph: {
     siteName: "Bizora",

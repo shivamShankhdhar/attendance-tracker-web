@@ -2,7 +2,6 @@ import { BizoraWordmark } from "@/components/BrandLogo";
 import { PlayStoreBadge } from "@/components/StoreBadges";
 
 export default function HomePage() {
-  const appStoreUrl = process.env.NEXT_PUBLIC_APP_STORE_URL || "#";
   const playStoreUrl = process.env.NEXT_PUBLIC_PLAY_STORE_URL || "#";
 
   return (

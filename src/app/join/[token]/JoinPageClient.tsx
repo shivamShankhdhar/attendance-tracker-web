@@ -163,7 +163,7 @@ function DesktopCTA({ token, playStoreUrl, workspaceName }: {
   token: string; playStoreUrl: string; workspaceName: string;
 }) {
   const [copied, setCopied] = useState(false);
-  const [currentUrl, setCurrentUrl] = useState(`https://bizora.app/join/${token}`);
+  const [currentUrl, setCurrentUrl] = useState(`https://www.bizora.shivamshankhdhar.online/join/${token}`);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
