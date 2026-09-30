@@ -1,0 +1,399 @@
+/* =====================================================
+   Bizora Web — Design System
+   Palette: Olive Green & Natural Sage
+   Source: frontend/src/constants/colors.ts
+   ===================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* Brand — Olive Green */
+  --brand:         #5B692D;
+  --brand-pressed: #465320;
+  --brand-light:   #7A8B47;
+  --brand-tint:    #EDF3DF;
+
+  /* Canvas & Surfaces */
+  --canvas:        #F5F6E8;
+  --surface:       #FFFFFF;
+  --surface-muted: #EFF2E3;
+  --border:        #E2E6D2;
+
+  /* Typography */
+  --text-primary:   #1B2210;
+  --text-secondary: #6A755A;
+  --text-inverse:   #FFFFFF;
+
+  /* Semantic Statuses */
+  --success:      #40501E;
+  --success-tint: #ECF2DE;
+  --pending:      #8C6314;
+  --pending-tint: #FBF4D7;
+  --danger:       #BA3B2A;
+  --danger-tint:  #FDEAE7;
+  --neutral:      #606C52;
+  --neutral-tint: #ECF1DD;
+
+  /* Geometry */
+  --radius-sm:   8px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-xl:   20px;
+  --radius-full: 999px;
+
+  /* Shadows */
+  --shadow:    0 4px 20px rgba(27, 34, 16, 0.08);
+  --shadow-sm: 0 2px 8px rgba(27, 34, 16, 0.05);
+
+  /* Font */
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html {
+  font-family: var(--font);
+  background: var(--canvas);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body { min-height: 100dvh; }
+a { color: inherit; text-decoration: none; }
+img, svg { display: block; }
+
+/* ── Layout ── */
+.page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 48px;
+  background: var(--canvas);
+  /* Subtle warm texture pattern */
+  background-image: radial-gradient(circle at 20% 10%, #EDF3DF 0%, transparent 40%),
+                    radial-gradient(circle at 80% 90%, #EDF3DF 0%, transparent 40%);
+}
+
+.container {
+  width: 100%;
+  max-width: 460px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.stack { display: flex; flex-direction: column; gap: 14px; width: 100%; }
+
+/* ── Card ── */
+.card {
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  border: 1.5px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Logo bar ── */
+.logo-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.logo-mark {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+.logo-name {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+.logo-tagline {
+  font-size: 8.5px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+/* ── Workspace preview ── */
+.workspace-hero {
+  width: 56px;
+  height: 56px;
+  border-radius: var(--radius-md);
+  background: var(--brand-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1.5px solid #D2DEC0;
+}
+
+.workspace-name {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.workspace-description {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-top: 2px;
+}
+
+.meta-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+.meta-row strong { color: var(--text-primary); font-weight: 600; }
+.meta-icon {
+  color: var(--brand);
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+}
+
+.meta-grid { display: flex; flex-direction: column; gap: 9px; }
+
+/* ── Divider ── */
+.divider {
+  height: 1px;
+  background: var(--border);
+  margin: 2px 0;
+}
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 700;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+  text-decoration: none;
+  line-height: 1;
+}
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn-primary {
+  background: var(--brand);
+  color: var(--text-inverse);
+  box-shadow: 0 3px 12px rgba(91, 105, 45, 0.35);
+}
+.btn-primary:hover {
+  background: var(--brand-pressed);
+  box-shadow: 0 5px 18px rgba(91, 105, 45, 0.40);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--brand);
+  border: 1.5px solid var(--border);
+}
+.btn-outline:hover { border-color: var(--brand); background: var(--brand-tint); }
+
+.btn-ghost {
+  background: var(--surface-muted);
+  color: var(--text-secondary);
+  border: 1.5px solid var(--border);
+}
+.btn-ghost:hover { background: var(--brand-tint); color: var(--brand); border-color: #C8D8A8; }
+
+/* ── Store buttons ── */
+.store-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 13px 18px;
+  border-radius: var(--radius-md);
+  border: 1.5px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+  text-decoration: none;
+  color: var(--text-primary);
+  width: 100%;
+}
+.store-btn:hover {
+  border-color: var(--brand);
+  box-shadow: 0 3px 12px rgba(91, 105, 45, 0.15);
+  transform: translateY(-1px);
+}
+.store-btn-icon { font-size: 26px; line-height: 1; }
+.store-btn-label { font-size: 10px; color: var(--text-secondary); font-weight: 500; margin-bottom: 1px; }
+.store-btn-name { font-size: 15px; font-weight: 700; color: var(--text-primary); }
+
+/* ── Open-in-app banner ── */
+.open-app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--brand-tint);
+  border-radius: var(--radius-md);
+  border: 1.5px solid #C8D8A8;
+}
+.open-app-bar-text { font-size: 13px; color: var(--text-primary); font-weight: 500; }
+.open-app-bar-link {
+  font-size: 13px;
+  color: var(--brand);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ── QR block ── */
+.qr-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.qr-box {
+  padding: 14px;
+  border-radius: var(--radius-lg);
+  background: var(--canvas);
+  border: 1.5px solid var(--border);
+}
+.qr-hint { font-size: 12px; color: var(--text-secondary); text-align: center; }
+
+/* ── Status badge ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 11px;
+  font-weight: 700;
+}
+.badge-pending  { background: var(--pending-tint);  color: var(--pending); }
+.badge-approved { background: var(--success-tint);  color: var(--success); }
+.badge-rejected { background: var(--danger-tint);   color: var(--danger);  }
+
+/* ── Error / Not found ── */
+.error-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--danger-tint);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/* ── Skeleton ── */
+.skeleton {
+  border-radius: 6px;
+  background: linear-gradient(90deg, #EFF2E3 25%, #E5E9D5 50%, #EFF2E3 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* ── Section label ── */
+.section-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+
+/* ── Footer ── */
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  padding: 0 8px;
+}
+
+/* ── Google Play button ── */
+.store-badge-wrap {
+  display: flex;
+  width: 100%;
+}
+.playstore-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #01875f;
+  color: #ffffff;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 3px 10px rgba(1, 135, 95, 0.28);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.playstore-btn:hover {
+  background-color: #017351;
+  box-shadow: 0 4px 14px rgba(1, 135, 95, 0.38);
+  transform: translateY(-1px);
+}
+.playstore-btn:active {
+  transform: translateY(0);
+  background-color: #015f43;
+}
+.playstore-icon {
+  font-size: 26px;
+  color: #ffffff;
+  flex-shrink: 0;
+}
+.playstore-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.15;
+}
+.playstore-sub {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.88);
+}
+.playstore-main {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+}
+
+/* ── Responsive ── */
+@media (max-width: 520px) {
+  .card { border-radius: var(--radius-lg); padding: 20px; }
+  .page { padding: 20px 0 32px; justify-content: flex-start; }
+  .workspace-name { font-size: 20px; }
+}
