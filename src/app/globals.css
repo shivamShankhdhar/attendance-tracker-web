@@ -644,3 +644,187 @@ img, svg { display: block; }
   .doc-page { padding: 20px 0 40px; }
 }
 
+/* ── Workplace Invitation Artworks & Stage ── */
+.invite-hero-card {
+  position: relative;
+  background: var(--surface);
+  border-radius: var(--radius-xl);
+  border: 1.5px solid var(--border);
+  box-shadow: 0 8px 30px rgba(27, 34, 16, 0.08);
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.artwork-stage {
+  position: relative;
+  width: 100%;
+  padding: 32px 16px 24px;
+  background: linear-gradient(180deg, #EFF4E2 0%, #FFFFFF 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.5px solid var(--border);
+  overflow: hidden;
+}
+
+.artwork-ambient-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(108, 125, 56, 0.12) 0%, rgba(237, 243, 223, 0) 70%);
+  pointer-events: none;
+}
+
+.artwork-floating-wrap {
+  animation: artworkFloat 4s ease-in-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+@keyframes artworkFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.invite-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #FFFFFF;
+  border: 1px solid #D2DEC0;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--brand);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  box-shadow: 0 2px 6px rgba(91, 105, 45, 0.08);
+  margin-top: 14px;
+  z-index: 1;
+}
+
+.invite-badge-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #6C7D38;
+  animation: pulseDot 2s infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+.invite-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.invite-title-block {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: center;
+}
+
+.invite-workplace-name {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--text-primary);
+  letter-spacing: -0.6px;
+  line-height: 1.2;
+}
+
+.invite-workplace-desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.meta-chips-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--surface-muted);
+  border: 1px solid #E2E6D2;
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+}
+
+.meta-chip-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.meta-chip-icon-box {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  border: 1px solid #D2DEC0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--brand);
+  flex-shrink: 0;
+}
+
+.meta-chip-label {
+  font-weight: 500;
+}
+
+.meta-chip-val {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.primary-cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--brand);
+  color: #FFFFFF !important;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 20px;
+  border-radius: var(--radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(91, 105, 45, 0.28);
+  width: 100%;
+  text-align: center;
+}
+
+.primary-cta-button:hover {
+  background: var(--brand-pressed);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(91, 105, 45, 0.35);
+}
+
+.primary-cta-button:active {
+  transform: translateY(0);
+}
+
+
