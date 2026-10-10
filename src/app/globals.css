@@ -827,4 +827,20 @@ img, svg { display: block; }
   transform: translateY(0);
 }
 
+/* ── Join Form UI ── */
+.join-input-field:focus {
+  border-color: var(--brand) !important;
+  box-shadow: 0 0 0 3px rgba(91, 105, 45, 0.15);
+}
+
+.join-paste-btn:hover {
+  background: var(--brand-tint) !important;
+  color: var(--brand) !important;
+  border-color: #C8D8A8 !important;
+}
+
+.join-paste-btn:active {
+  transform: translateY(-50%) scale(0.96) !important;
+}
+
 

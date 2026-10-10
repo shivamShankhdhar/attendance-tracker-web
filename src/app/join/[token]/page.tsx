@@ -38,7 +38,7 @@ export default async function JoinPage({ params }: Props) {
     notFound();
   }
 
-  const playStoreUrl = process.env.NEXT_PUBLIC_PLAY_STORE_URL || "";
+  const playStoreUrl = process.env.NEXT_PUBLIC_PLAY_STORE_URL || "https://play.google.com/store/apps/details?id=bizora.app";
   const scheme = process.env.NEXT_PUBLIC_APP_SCHEME || "bizora";
 
   return (
