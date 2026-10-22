@@ -231,11 +231,11 @@ export default function DeleteAccountForm() {
         <div
           style={{
             padding: "12px 14px",
-            background: "#EFF6FF",
+            background: "var(--brand-tint)",
             borderRadius: "var(--radius-md)",
-            border: "1px solid #BFDBFE",
+            border: "1px solid #DDD6FE",
             fontSize: 12.5,
-            color: "#1E40AF",
+            color: "var(--brand-pressed)",
             lineHeight: 1.5,
           }}
         >

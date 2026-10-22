@@ -1,17 +1,21 @@
-/** The real Bizora mark SVG — matches frontend/assets/brand/bizora-mark.svg */
+import Image from "next/image";
+
+/** The official Bizora mark */
 export function BizoraMark({ size = 40 }: { size?: number }) {
   return (
-    <svg width={size} height={size} viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <rect x="2" y="2" width="44" height="44" rx="13" fill="#3B5724"/>
-      <rect x="12" y="11" width="5.5" height="26" rx="2.75" fill="#FFFFFF"/>
-      <path d="M15 14H26C29.8 14 32.5 16.2 32.5 19C32.5 21.8 29.8 24 26 24H15" stroke="#FFFFFF" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round"/>
-      <path d="M15 24H27.5C31.5 24 34.5 26.3 34.5 29.5C34.5 32.7 31.5 34 27.5 34H15" stroke="#FFFFFF" strokeWidth="4.5" strokeLinecap="round" strokeLinejoin="round"/>
-      <circle cx="15" cy="14" r="2.5" fill="#FFFFFF"/>
-      <circle cx="15" cy="24" r="2.5" fill="#FFFFFF"/>
-      <circle cx="15" cy="34" r="2.5" fill="#FFFFFF"/>
-      <circle cx="26" cy="19" r="2.5" fill="#E5A93C"/>
-      <circle cx="20" cy="24" r="2.8" fill="#E5A93C"/>
-    </svg>
+    <Image
+      src="/bizora_logo.png"
+      alt="Bizora Logo"
+      width={size}
+      height={size}
+      style={{
+        borderRadius: "24%",
+        objectFit: "contain",
+        display: "block",
+        boxShadow: "0 2px 10px rgba(124, 58, 237, 0.28)",
+      }}
+      priority
+    />
   );
 }
 
