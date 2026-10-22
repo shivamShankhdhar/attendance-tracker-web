@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
 interface DeleteAccountRequestBody {
-  name: string;
+  name?: string;
+  fullName?: string;
   email: string;
   role?: string;
   workplaceCode?: string;
@@ -14,7 +15,8 @@ export async function POST(req: NextRequest) {
   try {
     const body = (await req.json()) as DeleteAccountRequestBody;
 
-    const { name, email, role, workplaceCode, reason, notes, confirmIrreversible } = body;
+    const name = body.name || body.fullName || "";
+    const { email, role, workplaceCode, reason, notes, confirmIrreversible } = body;
 
     // Validate email
     const trimmedEmail = (email || "").trim().toLowerCase();
