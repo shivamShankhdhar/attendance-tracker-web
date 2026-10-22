@@ -239,8 +239,8 @@ export default function PrivacyPolicyPage() {
               <li>Request correction of inaccurate personal information.</li>
               <li>
                 <strong>Delete your account and records:</strong> You can request full account deletion directly within the mobile application settings, via our online portal, or by contacting our data privacy team at{" "}
-                <a href="mailto:support@bizora.shivamshankhdhar.online" style={{ color: "var(--brand)", fontWeight: 600 }}>
-                  support@bizora.shivamshankhdhar.online
+                <a href="mailto:er.shivam1214@gmail.com" style={{ color: "var(--brand)", fontWeight: 600 }}>
+                  er.shivam1214@gmail.com
                 </a>. Upon verification, your profile, authentication credentials, and personal records will be permanently purged from our active systems.
               </li>
             </ul>
@@ -276,8 +276,8 @@ export default function PrivacyPolicyPage() {
               <span><strong>Product:</strong> Bizora (Workforce Attendance OS)</span>
               <span>
                 <strong>Email:</strong>{" "}
-                <a href="mailto:support@bizora.shivamshankhdhar.online" style={{ color: "var(--brand)", fontWeight: 600 }}>
-                  support@bizora.shivamshankhdhar.online
+                <a href="mailto:er.shivam1214@gmail.com" style={{ color: "var(--brand)", fontWeight: 600 }}>
+                  er.shivam1214@gmail.com
                 </a>
               </span>
               <span><strong>Website:</strong> https://www.bizora.shivamshankhdhar.online</span>

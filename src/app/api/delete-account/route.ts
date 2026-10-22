@@ -115,7 +115,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         success: false,
-        error: "An unexpected error occurred while submitting your request. Please try again or contact support@bizora.shivamshankhdhar.online directly.",
+        error: "An unexpected error occurred while submitting your request. Please try again or contact er.shivam1214@gmail.com directly.",
       },
       { status: 500 }
     );

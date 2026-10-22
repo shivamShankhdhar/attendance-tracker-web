@@ -243,8 +243,8 @@ export default function DeleteAccountPage() {
               <span><strong>Data Privacy Officer:</strong> Shivam Shankhdhar</span>
               <span>
                 <strong>Email:</strong>{" "}
-                <a href="mailto:support@bizora.shivamshankhdhar.online" style={{ color: "var(--brand)", fontWeight: 600 }}>
-                  support@bizora.shivamshankhdhar.online
+                <a href="mailto:er.shivam1214@gmail.com" style={{ color: "var(--brand)", fontWeight: 600 }}>
+                  er.shivam1214@gmail.com
                 </a>
               </span>
               <span><strong>Product:</strong> Bizora (bizora.app)</span>

@@ -241,10 +241,10 @@ export default function DeleteAccountForm() {
         >
           A confirmation record has been logged. You can quote ticket <strong>{result.ticketId}</strong> to{" "}
           <a
-            href="mailto:support@bizora.shivamshankhdhar.online"
+            href="mailto:er.shivam1214@gmail.com"
             style={{ fontWeight: 700, textDecoration: "underline" }}
           >
-            support@bizora.shivamshankhdhar.online
+            er.shivam1214@gmail.com
           </a>{" "}
           if you have any questions or need immediate verification.
         </div>
