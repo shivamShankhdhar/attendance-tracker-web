@@ -4,35 +4,37 @@
    Source: frontend/src/constants/colors.ts
    ===================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-  /* Brand — Olive Green */
-  --brand:         #5B692D;
-  --brand-pressed: #465320;
-  --brand-light:   #7A8B47;
-  --brand-tint:    #EDF3DF;
+  /* Brand — Vibrant Blue Primary Active Color */
+  --brand:         #2563EB;
+  --brand-pressed: #1D4ED8;
+  --brand-light:   #3B82F6;
+  --brand-tint:    #EFF6FF;
+  --brand-accent:  #2563EB;
+  --brand-glow:    #60A5FA;
 
-  /* Canvas & Surfaces */
-  --canvas:        #F5F6E8;
+  /* Canvas & Surfaces — Crisp White */
+  --canvas:        #FFFFFF;
   --surface:       #FFFFFF;
-  --surface-muted: #EFF2E3;
-  --border:        #E2E6D2;
+  --surface-muted: #F8FAFC;
+  --border:        #E2E8F0;
 
   /* Typography */
-  --text-primary:   #1B2210;
-  --text-secondary: #6A755A;
+  --text-primary:   #0F172A;
+  --text-secondary: #475569;
   --text-inverse:   #FFFFFF;
 
   /* Semantic Statuses */
-  --success:      #40501E;
-  --success-tint: #ECF2DE;
-  --pending:      #8C6314;
-  --pending-tint: #FBF4D7;
-  --danger:       #BA3B2A;
-  --danger-tint:  #FDEAE7;
-  --neutral:      #606C52;
-  --neutral-tint: #ECF1DD;
+  --success:      #059669;
+  --success-tint: #ECFDF5;
+  --pending:      #D97706;
+  --pending-tint: #FFFBEB;
+  --danger:       #DC2626;
+  --danger-tint:  #FEF2F2;
+  --neutral:      #475569;
+  --neutral-tint: #F1F5F9;
 
   /* Geometry */
   --radius-sm:   8px;
@@ -42,11 +44,11 @@
   --radius-full: 999px;
 
   /* Shadows */
-  --shadow:    0 4px 20px rgba(27, 34, 16, 0.08);
-  --shadow-sm: 0 2px 8px rgba(27, 34, 16, 0.05);
+  --shadow:    0 10px 30px -5px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
 
   /* Font */
-  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --font: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* ── Reset ── */

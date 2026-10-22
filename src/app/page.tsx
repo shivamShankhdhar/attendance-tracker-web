@@ -21,6 +21,9 @@ export default function HomePage() {
               <Link href="/privacy" className="doc-nav-link" id="home-to-privacy" style={{ fontSize: 12.5 }}>
                 Privacy
               </Link>
+              <Link href="/delete-account" className="doc-nav-link" id="home-to-delete" style={{ fontSize: 12.5, color: "var(--danger)" }}>
+                Delete Account
+              </Link>
             </div>
           </div>
 
@@ -118,6 +121,8 @@ export default function HomePage() {
             <Link href="/about">About Bizora</Link>
             <span>&bull;</span>
             <Link href="/privacy">Privacy Policy</Link>
+            <span>&bull;</span>
+            <Link href="/delete-account" style={{ color: "var(--danger)" }}>Delete Account</Link>
           </div>
         </div>
       </div>

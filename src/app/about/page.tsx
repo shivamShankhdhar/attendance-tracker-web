@@ -34,6 +34,9 @@ export default function AboutPage() {
               <Link href="/privacy" className="doc-nav-link" id="about-to-privacy">
                 Privacy Policy
               </Link>
+              <Link href="/delete-account" className="doc-nav-link" id="about-to-delete" style={{ color: "var(--danger)" }}>
+                Delete Account
+              </Link>
             </div>
           </div>
 
@@ -147,6 +150,8 @@ export default function AboutPage() {
             <Link href="/about">About Bizora</Link>
             <span>&bull;</span>
             <Link href="/privacy">Privacy Policy</Link>
+            <span>&bull;</span>
+            <Link href="/delete-account" style={{ color: "var(--danger)" }}>Delete Account</Link>
           </div>
         </div>
       </div>

@@ -23,6 +23,9 @@ export default function PrivacyPolicyPage() {
               <Link href="/about" className="doc-nav-link" id="privacy-to-about">
                 About Bizora
               </Link>
+              <Link href="/delete-account" className="doc-nav-link" id="privacy-to-delete" style={{ color: "var(--danger)" }}>
+                Delete Account
+              </Link>
             </div>
           </div>
 
@@ -235,12 +238,24 @@ export default function PrivacyPolicyPage() {
               <li>Access, export, or review all attendance and profile data associated with your account.</li>
               <li>Request correction of inaccurate personal information.</li>
               <li>
-                <strong>Delete your account and records:</strong> You can request full account deletion directly within the mobile application settings or by contacting our data privacy team at{" "}
+                <strong>Delete your account and records:</strong> You can request full account deletion directly within the mobile application settings, via our online portal, or by contacting our data privacy team at{" "}
                 <a href="mailto:support@bizora.shivamshankhdhar.online" style={{ color: "var(--brand)", fontWeight: 600 }}>
                   support@bizora.shivamshankhdhar.online
                 </a>. Upon verification, your profile, authentication credentials, and personal records will be permanently purged from our active systems.
               </li>
             </ul>
+
+            <div className="doc-callout" style={{ borderLeftColor: "var(--danger)" }}>
+              <div className="doc-callout-title" style={{ color: "var(--danger)" }}>
+                <IoLockClosedOutline style={{ fontSize: 16 }} /> Online Account &amp; Data Deletion Portal
+              </div>
+              <p className="doc-callout-text">
+                To submit an account and data deletion request directly from your browser without logging in to the mobile application, visit our official{" "}
+                <Link href="/delete-account" style={{ color: "var(--brand)", fontWeight: 700, textDecoration: "underline" }}>
+                  Account Deletion Request Portal
+                </Link>.
+              </p>
+            </div>
           </section>
 
           {/* Section 8: Children's Privacy */}
@@ -266,6 +281,7 @@ export default function PrivacyPolicyPage() {
                 </a>
               </span>
               <span><strong>Website:</strong> https://www.bizora.shivamshankhdhar.online</span>
+              <span><strong>Account Deletion:</strong> https://www.bizora.shivamshankhdhar.online/delete-account</span>
             </div>
           </section>
 
@@ -276,6 +292,8 @@ export default function PrivacyPolicyPage() {
             <Link href="/about">About Bizora</Link>
             <span>&bull;</span>
             <Link href="/privacy">Privacy Policy</Link>
+            <span>&bull;</span>
+            <Link href="/delete-account" style={{ color: "var(--danger)" }}>Delete Account</Link>
           </div>
         </div>
       </div>

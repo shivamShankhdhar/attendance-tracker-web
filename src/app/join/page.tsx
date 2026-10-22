@@ -17,6 +17,8 @@ interface Props {
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
   const params = await searchParams;
   const rawParam =
+    params.wp ||
+    params.workplaceCode ||
     params.code ||
     params.token ||
     params.teamCode ||
@@ -59,6 +61,8 @@ export default async function JoinQueryPage({ searchParams }: Props) {
   const platform = detectPlatform(ua);
 
   const rawParam =
+    params.wp ||
+    params.workplaceCode ||
     params.code ||
     params.token ||
     params.teamCode ||
